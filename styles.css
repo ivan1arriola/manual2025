@@ -1,0 +1,88 @@
+/* Colores */
+:root {
+    --azul-oscuro: #0072A6;
+    --amarillo-claro: #FFD000;
+    --naranja: #FE8A03;
+    --rojo-vino: #7E0038;
+    --morado: #A603D0;
+    --azul-claro: #037EF5;
+    --verde: #8BC24A;
+    --rojo: #F44236;
+    --marron: #AC4A15;
+    --verde-oscuro: #00BF63;
+    --azul-marino: #0E1A61;
+    --azul-suave: #9DB3F3;
+    --amarillo-fuerte: #FFFEEC;
+    --amarillo-suave: #FFFE70;
+    --azul-cei: #313E95;
+    --amarillo-cei: #FED423;
+    --titulohueso: #FFFEA4;
+    --sombras-plenario: #FFEEC4;
+    --detalles-azul: #9D3BF3;
+    --detalles-amarillo: #FFE570;
+}
+
+/* Estilo General */
+body {
+    font-family: 'League Spartan', sans-serif;
+    background-color: var(--azul-suave);
+    color: var(--azul-marino);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para títulos */
+h1, h2, h3, h4 {
+    font-family: 'Chewy', sans-serif;
+    color: var(--azul-oscuro);
+}
+
+/* Estilo para subtítulos y texto común */
+h2, h3, p {
+    font-family: 'League Spartan', sans-serif;
+    color: var(--naranja);
+}
+
+/* Enlaces */
+a {
+    color: var(--amarillo-cei);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--amarillo-claro);
+}
+
+/* Botones */
+button {
+    background-color: var(--amarillo-cei);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--amarillo-fuerte);
+}
+
+/* Estilo para secciones específicas */
+section {
+    padding: 20px;
+    background-color: var(--sombras-plenario);
+}
+
+/* Detalles */
+.details {
+    background-color: var(--detalles-azul);
+    color: var(--titulohueso);
+}
+
+/* Fondo de página */
+footer {
+    background-color: var(--azul-cei);
+    color: var(--titulohueso);
+    text-align: center;
+    padding: 10px 0;
+}
