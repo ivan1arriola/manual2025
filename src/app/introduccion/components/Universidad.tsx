@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "@/app/introduccion/page.module.css";
-import Link from "next/link";
 
 export default function Universidad() {
   return (

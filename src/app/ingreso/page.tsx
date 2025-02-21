@@ -1,7 +1,6 @@
 "use client";
 
 import styles from "@/app/ingreso/Ingreso.module.css";
-import Link from "next/link";
 import ProcedimientoInscripcion from "@/app/ingreso/components/ProcedimientoInscripcion";
 import Asesoramiento from "@/app/ingreso/components/Asesoramiento";
 import EntregaDocumentacion from "@/app/ingreso/components/EntregaDocumentacion";
