@@ -1,12 +1,13 @@
 "use client";
 
-import { Button } from "@/ui/Button/Button";
-import { Card } from "@/ui/Card/Card";
-import { CardContent } from "@/ui/CardContent/CardContent";
+import { Button } from "@/components/common/Button/Button";
+import { Card } from "@/components/common/Card/Card";
+import { CardContent } from "@/components/common/CardContent/CardContent";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "./Home.module.css"; // Archivo de estilos CSS Modules
+import ObjetivoAlcance from "./ObjetivosAlcance";
 
 export default function Home() {
   return (
@@ -51,9 +52,7 @@ export default function Home() {
           <CardContent className={styles.cardContent}>
             <p className={styles.sectionTitle}>Explora las secciones:</p>
             <div className={styles.buttonGrid}>
-              <Link href="/objetivo-alcance">
-                <Button className={styles.button}>Objetivo y Alcance</Button>
-              </Link>
+              
               <Link href="/introduccion">
                 <Button className={styles.button}>Introducción</Button>
               </Link>
@@ -91,6 +90,8 @@ export default function Home() {
           </CardContent>
         </Card>
       </motion.div>
+
+      <ObjetivoAlcance />
 
     </div>
   );

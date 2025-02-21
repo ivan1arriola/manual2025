@@ -3,15 +3,16 @@
 
 /* Variables de color */
 :root {
-  --color-primary: #FFF; /* Blanco (Texto principal) */
-  --color-secondary: #FFC107; /* Amarillo CEI (ajustado para contraste) */
-  --color-danger: #F44236;  /* Rojo (alertas) */
-  --color-success: #00BF63;  /* Verde (confirmaciones) */
-  --color-background: #303E95; /* Azul CEI (Fondo Principal) */
-  --color-card: #FFFEE4; /* Fondo para secciones destacadas */
-  --color-footer: #212A6B; /* Azul más oscuro para el footer */
-  --color-text: #FFF; /* Blanco (Texto) */
-  --color-white: #FFF; /* Blanco */
+  --color-primary: #FFFFFF; /* Blanco (Texto principal) */
+  --color-secondary: #FFC107; /* Amarillo CEI (Elementos destacados) */
+  --color-accent: #FBE7C6; /* Beige claro (Fondo de QR y detalles) */
+  --color-background: #1E237E; /* Azul oscuro (Fondo principal) */
+  --color-card: #3741B5; /* Azul intermedio (Secciones destacadas) */
+  --color-light: #9FA8DA; /* Azul claro (Detalles decorativos) */
+  --color-footer: #10184E; /* Azul más oscuro (Footer) */
+  --color-text: #FFFFFF; /* Blanco (Texto) */
+  --color-danger: #F44236; /* Rojo (Alertas) */
+  --color-success: #00BF63; /* Verde (Confirmaciones) */
 
   --font-titles: 'Chewy', cursive;
   --font-body: 'League Spartan', sans-serif;
@@ -31,6 +32,8 @@ html, body {
   background-size: cover;
   color: var(--color-text);
   line-height: 1.6;
+  touch-action: manipulation;
+  overscroll-behavior: none;
 }
 
 /* Tipografía */

@@ -24,7 +24,6 @@ export default function Navbar() {
 
       {/* Lista de enlaces con visibilidad dinámica */}
       <div className={`${styles.links} ${menuOpen ? styles.show : ""}`}>
-        <Link href="/objetivo-alcance" onClick={() => setMenuOpen(false)}>Objetivo y Alcance</Link>
         <Link href="/introduccion" onClick={() => setMenuOpen(false)}>Introducción</Link>
         <Link href="/ingreso" onClick={() => setMenuOpen(false)}>Ingreso</Link>
         <Link href="/primer-semestre" onClick={() => setMenuOpen(false)}>Primer Semestre</Link>
