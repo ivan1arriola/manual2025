@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main {
+  max-width: 800px;
+  width: 100%;
+}
+
+.intro {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-titles);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.subtitle {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.cardContent {
+  text-align: center;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+  gap: 10px;
+  width: 100%;
+}
+
+.button {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  width: 100%; /* Hace que los botones cubran todo el ancho */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.fullWidthButton {
+  grid-column: span 2; /* Hace que el botón ocupe ambas columnas */
+  text-align: center;
+}

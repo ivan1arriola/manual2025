@@ -1,0 +1,72 @@
+.navbar {
+  width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* Menú en pantallas grandes */
+.links {
+  display: flex;
+  gap: 15px;
+}
+
+.links a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Botón de menú hamburguesa en móviles */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menuButton {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background);
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .links.show {
+    display: flex;
+  }
+
+  .links a {
+    padding: 10px 0;
+    font-size: 1.2rem;
+    display: block;
+  }
+}
